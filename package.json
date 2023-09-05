@@ -1,0 +1,17 @@
+{
+  "name": "actividad-ingenias",
+  "version": "1.0.0",
+  "description": "Bienvenida a la documentación de nuestra API RESTFUL de frutas. Esta API te permite realizar operaciones CRUD (Crear, Leer, Actualizar, Eliminar) en una base de datos de frutas.\r A continuación, detallamos la información esencial para comenzar a utilizar esta API.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mongoose": "^7.5.0"
+  }
+}

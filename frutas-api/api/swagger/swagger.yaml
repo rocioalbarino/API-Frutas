@@ -1,0 +1,36 @@
+swagger: '2.0'
+info:
+  title: API de Frutas
+  version: 1.0.0
+paths:
+  /frutas:
+    get:
+      summary: Obtener todas las frutas
+      responses:
+        200:
+          description: Lista de frutas
+  /frutas/{id}:
+    put:
+      summary: Actualizar una fruta
+      parameters:
+        - name: id
+          in: path
+          required: true
+          type: integer
+      responses:
+        200:
+          description: Fruta actualizada con éxito
+definitions:
+  Fruta:
+    type: object
+    properties:
+      id:
+        type: integer
+      imagen:
+        type: string
+      nombre:
+        type: string
+      importe:
+        type: number
+      stock:
+        type: integer
