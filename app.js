@@ -34,20 +34,17 @@ mongoose.connection.on('error', (err) => {
 
 // Rutas
 
-// Ruta de inicio
-app.get('/', (req, res) => {
-  res.send('Bienvenidas a nuestra API de Frutas');
+// Ruta base para /api/v1/
+app.get('/api/v1/', (req, res) => {
+  res.send('Bienvenida a nuestra API de frutas');
 });
+
 
 // Ruta para obtener todas las frutas
 app.get('/api/v1/frutas', (req, res) => {
   res.json(frutasData);
 });
 
-// Ruta adicional para /api/v1/
-app.get('/api/v1/', (req, res) => {
-  res.send('Bienvenida a la APIREST de frutas');
-});
 
 // Inicia el servidor
 app.listen(port, () => {
